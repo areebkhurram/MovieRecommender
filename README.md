@@ -1,17 +1,14 @@
 # Movie Recommender System
-# ------------------------
 
 A content-based movie recommendation system built with Python and Streamlit. The application recommends movies based on their genres, keywords, cast, crew, and plot overview, and uses the TMDb API to display additional movie information such as posters, ratings, release years, genres, and overviews.
 
 ## Project Overview
-## ----------------
 
 The goal of this project is to build an end-to-end movie recommendation system while practicing data preprocessing, natural language processing, similarity-based recommendation, API integration, and Streamlit application development.
 
 The system uses a **content-based filtering** approach. When a user selects a movie, the system analyzes the movie's content and finds other movies with similar characteristics.
 
 ## Features
-## --------
 
 * Content-based movie recommendations
 * Searchable movie selection
@@ -28,7 +25,6 @@ The system uses a **content-based filtering** approach. When a user selects a mo
 * Pre-computed recommendation model stored using Git LFS
 
 ## How It Works
-## ------------
 
 The recommendation system follows several steps.
 
@@ -102,7 +98,6 @@ For a selected movie, the system compares its similarity scores with all other m
 > Note: The displayed similarity percentage represents the cosine similarity score multiplied by 100. It is **not a probability** that the user will like the recommended movie.
 
 ## Recommendation Pipeline
-## -----------------------
 
 ```text
 Movie Dataset
@@ -133,7 +128,6 @@ Streamlit Interface
 ```
 
 ## Tech Stack
-## ----------
 
 ### Programming
 
@@ -169,7 +163,6 @@ Streamlit Interface
 * Git LFS
 
 ## Project Structure
-## -----------------
 
 ```text
 Movie_Recommender/
@@ -225,7 +218,6 @@ Contains the data exploration, preprocessing, feature engineering, vectorization
 Contains the original TMDb datasets used for the project.
 
 ## Installation
-## ------------
 
 ### 1. Clone the repository
 
@@ -277,7 +269,6 @@ streamlit run app.py
 The application will open in your browser.
 
 ## Example
-## -------
 
 For example, selecting:
 
@@ -298,7 +289,6 @@ can produce recommendations such as:
 The similarity values are calculated using cosine similarity between the movie feature vectors.
 
 ## Dataset
-## -------
 
 This project uses the **TMDb 5000 Movies and Credits datasets**.
 
@@ -307,7 +297,6 @@ The datasets contain information about thousands of movies, including movie titl
 The original datasets are used for educational and project purposes.
 
 ## API Key Security
-## ----------------
 
 The TMDb API key is stored locally using Streamlit's secrets mechanism:
 
@@ -320,7 +309,6 @@ The secrets file is excluded from Git using `.gitignore`.
 The application also handles API failures and request timeouts so that the recommendation system can still display basic recommendation information if additional TMDb details cannot be retrieved.
 
 ## Model Files
-## -----------
 
 The pre-computed model files are included in the repository:
 
@@ -334,7 +322,6 @@ Because `similarity.pkl` is larger than GitHub's standard 100 MB file limit, the
 This allows the complete recommendation model to remain part of the project repository without exceeding GitHub's normal file-size limit.
 
 ##  Future Improvements
-##  -------------------
 
 Possible future improvements include:
 
@@ -348,7 +335,6 @@ Possible future improvements include:
 * Evaluate recommendation quality using suitable recommendation metrics
 
 ##  What I Learned
-##  --------------
 
 Through this project, I practiced:
 
