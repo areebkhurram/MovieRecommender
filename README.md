@@ -8,13 +8,14 @@ The goal of this project is to build an end-to-end movie recommendation system w
 
 The system uses a **content-based filtering** approach. When a user selects a movie, the system analyzes the movie's content and finds other movies with similar characteristics.
 
-## Applicartion Preview
-# Header
-![alt text](image-1.png)
+## Application Preview
+### Header
 
-# Recommendations
-![alt text](image-2.png)
+![Movie Recommender Header](screenshots/home.png)
 
+### Recommendations
+
+![Movie Recommendations](screenshots/recommendations.png)
 
 ## Features
 
